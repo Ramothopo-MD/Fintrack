@@ -1,0 +1,51 @@
+<!-- Sidebar -->
+<div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebarMenu">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title text-white fw-semibold">
+      <i class="fas fa-cogs me-2"></i>Admin Panel
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body p-3">
+
+    <!-- Dashboard -->
+    <a href="/admin/dashboard" class="<%= activePage === 'dashboard' ? 'active' : '' %>">
+      <i class="fas fa-tachometer-alt"></i> Dashboard
+    </a>
+
+    <!-- Users -->
+    <a href="/admin/manage-users" class="<%= activePage === 'users' ? 'active' : '' %>">
+      <i class="fas fa-users"></i> Manage Users
+    </a>
+
+    <!-- Complaints -->
+    <a href="/admin/manage-complaints" class="<%= activePage === 'complaints' ? 'active' : '' %>">
+      <i class="fas fa-comments"></i> Complaints
+    </a>
+
+    <!-- Announcements -->
+    <a href="/announcements/manage-announcements" class="<%= activePage === 'announcements' ? 'active' : '' %>">
+      <i class="fas fa-bullhorn"></i> Announcements
+    </a>
+
+    <!-- Subscription Plans -->
+    <a href="/plan/manage-plans" class="<%= activePage === 'plans' ? 'active' : '' %>">
+      <i class="fas fa-credit-card"></i> Subscription Plans
+    </a>
+
+    <!-- Reports (optional future link) -->
+    <!--
+    <a href="/admin/reports" class="<%= activePage === 'reports' ? 'active' : '' %>">
+      <i class="fas fa-chart-bar"></i> Reports
+    </a>
+    -->
+
+    <hr class="text-light">
+
+    <!-- Logout -->
+    <a href="/user/logout" class="text-danger">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </a>
+  </div>
+</div>

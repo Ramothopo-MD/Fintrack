@@ -1,0 +1,54 @@
+{
+  "name": "fintrack",
+  "version": "1.0.0",
+  "description": "Smart Receipt Management and Budget Tracking App",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "desktop": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mosewa Desmond",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "method-override": "^3.0.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.4",
+    "nodemailer": "^7.0.6",
+    "nodemon": "^3.1.10",
+    "open": "^10.2.0",
+    "openai": "^5.17.0",
+    "paystack-api": "^2.0.6",
+    "sharp": "^0.34.3",
+    "string-similarity": "^4.0.4",
+    "stripe": "^19.1.0",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.fintrack.desktop",
+    "productName": "FinTrack",
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "public/images/icon.ico"
+    }
+  }
+}
