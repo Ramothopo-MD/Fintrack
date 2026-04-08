@@ -65,7 +65,7 @@ Dashboard displays insights
 User makes informed financial decisions
 📦 Installation & Setup
 # Clone the repository
-git clone https://github.com/your-username/Fintrack.git
+git clone https://github.com/Ramothopo-MD/Fintrack.git
 
 # Navigate into the project
 cd Fintrack
